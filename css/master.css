@@ -1,0 +1,236 @@
+    /*fonts*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    /*default css*/
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        color: #323232;
+        font-family: Inter, sans-serif;
+        box-sizing: border-box;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        margin-left: 22%;
+        padding: 3.25% 7%;
+    }
+    /* .section-form {
+        margin-left: 0%; 
+    } */
+    /*ran if nav is not present*/
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Poppins"!important;
+        font-weight: 600;
+    }
+    
+    .header h1,
+    .header h2,
+    .header h3,
+    .header h4,
+    .header h5,
+    .header h6 {
+        padding: 20px 0 0 0;
+        margin-bottom: 0;
+    }
+    
+    .header p {
+        margin-top: 0;
+        letter-spacing: 1px;
+        color: #888;
+    }
+    /*nav*/
+    
+    nav {
+        position: fixed;
+        width: 22%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, #16747C, #16747C), #0DCEDA;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 15px 15px 0px;
+    }
+    
+    .logo {
+        height: 125px;
+        display: flex;
+        justify-content: center;
+        margin: 25% 0 10% 0;
+    }
+    
+    .img-logo {
+        height: 100%;
+    }
+    
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav li {
+        padding: 5% 20%;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        font-weight: 600;
+    }
+    
+    nav li:hover,
+    .active-menu {
+        border-left: 5px solid white;
+        transition: .2s linear;
+    }
+    /* table */
+    
+    table {
+        width: 100%;
+    }
+    
+    table,
+    tr,
+    th,
+    td {
+        border-collapse: collapse;
+    }
+    
+    .table-data,
+    .table-data tr,
+    .table-data th,
+    .table-data td {
+        border: 1px solid #ddd;
+    }
+    
+    .table-data .table-header {
+        border-bottom: 2px solid rgba(22, 116, 124, .5);
+    }
+    
+    .table-data th {
+        color: #16747C/*dark color*/
+    }
+    
+    .table-data th,
+    .table-data td {
+        padding: 15px 20px;
+    }
+    
+    .header-table {
+        display: flex;
+    }
+    /* forms */
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    button,
+    select {
+        font-size: 1em;
+        padding: 12.5px 25px;
+        outline: none;
+        border: none;
+    }
+    
+    button {
+        background: #16747C;
+        /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, #16747C, #16747C), #0DCEDA; */
+        border-radius: 8px;
+        color: #fff;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+        transition: background .1s linear;
+        cursor: pointer;
+    }
+    
+    .btn-add {
+        margin-left: auto;
+        min-width: 200px;
+        max-height: 50px;
+        align-self: center;
+    }
+    
+    button:hover {
+        background: #2698A1;
+        transition: background .1s linear;
+    }
+    
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    select {
+        border-radius: 8px;
+        background: rgba(242, 242, 242, 1);
+        border: 2px solid transparent;
+        transition: .1s ease-in-out;
+        font-weight: 500;
+        width: 100%;
+    }
+    
+    input:focus,
+    input:hover {
+        border-radius: 8px;
+        background: #fff;
+        border: 2px solid #16747C;
+        transition: .1s ease-in-out;
+    }
+    
+    input[type=radio] {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    
+    .lbl-radio {
+        display: inline-flex;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    /* table forms and submit button*/
+    
+    .table-form td {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        padding-right: 5%;
+    }
+    
+    .btn-submit-container {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        padding-right: 5%;
+    }
+    
+    button[type=submit] {
+        width: 20%;
+    }
+    /*goBack*/
+    
+    .goBack {
+        margin: 5% 0 0 0;
+    }
+    
+    .goBack a {
+        color: #323232;
+    }
+    
+    .goBack a,
+    .goBack i {
+        color: rgba(22, 116, 124);
+    }
