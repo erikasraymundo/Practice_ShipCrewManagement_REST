@@ -7,33 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/master.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="../../js/route_display.js"></script>
 </head>
 
 <body>
 
     <nav>
         <div class="logo">
-            <a href="index.html"><img class="img-logo" src="images/logo.png"></a>
+            <a href="../../"><img class="img-logo" src="../../images/logo.png"></a>
         </div>
 
         <ul>
             <li class="active-menu">
-                <a href="">Menu Title</a>
+                <a href="../../views/route">Routes</a>
             </li>
             <li>
-                <a href="">Menu Title</a>
+                <a href="../../views/ship">Ships</a>
             </li>
             <li>
-                <a href="">Menu Title</a>
-            </li>
-            <li>
-                <a href="">Menu Title</a>
-            </li>
-            <li>
-                <a href="">Menu Title</a>
-            </li>
-            <li>
-                <a href="">Menu Title</a>
+                <a href="../../views/crew">Crews</a>
             </li>
         </ul>
     </nav>
@@ -41,69 +38,22 @@
     <main>
 
         <div class="header">
-            <h1>Heading Title</h1>
+            <h1>Routes</h1>
             <p>Subtitle</p>
         </div>
 
         <div class="header-table">
             <div class="header">
-                <h2>Table Title</h2>
-                <p>Subtitle</p>
+                <h2>List of Routes</h2>
+                <p>The table below displays all the saved ship routes.</p>
             </div>
 
             <button class="btn-add"><a href="add.html">+&nbsp;&nbsp;&nbsp;Add Route</a></button>
         </div>
 
-        <table class="table-data">
-            <tr class="table-header">
-                <th>Title 1</th>
-                <th>Title 2</th>
-                <th>Title 3</th>
-                <th>Title 4</th>
-                <th>Title 5</th>
-                <th>Title 6</th>
-            </tr>
-            <tr>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-            </tr>
-            <tr>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-            </tr>
-            <tr>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-            </tr>
-            <tr>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-            </tr>
-            <tr>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-                <td>Some content</td>
-            </tr>
-        </table>
+        <div id="display">
+
+        </div>
 
     </main>
 

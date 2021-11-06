@@ -140,6 +140,9 @@
     input[type=text],
     input[type=password],
     input[type=email],
+    input[type=number],
+    input[type=date],
+    input[type=email],
     button,
     select {
         font-size: 1em;
@@ -172,6 +175,9 @@
     
     input[type=text],
     input[type=password],
+    input[type=email],
+    input[type=number],
+    input[type=date],
     input[type=email],
     select {
         border-radius: 8px;

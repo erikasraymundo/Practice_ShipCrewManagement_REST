@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/master.css">
-    <!-- <script src="node_modules/geo-distance-helper"></script> -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="../../js/route_add.js"></script>
+    <script src="../../js/geolib.js"></script>
 
     <style>
         /*here goes my customized css*/
@@ -20,94 +26,81 @@
 
     <nav>
         <div class="logo">
-            <img src="images/logo.png">
+            <a href="../../"><img class="img-logo" src="../../images/logo.png"></a>
         </div>
 
         <ul>
             <li class="active-menu">
-                <a href="">Menu Title</a>
+                <a href="../../views/route">Routes</a>
             </li>
             <li>
-                <a href="">Menu Title</a>
+                <a href="../../views/ship">Ships</a>
             </li>
             <li>
-                <a href="">Menu Title</a>
-            </li>
-            <li>
-                <a href="">Menu Title</a>
-            </li>
-            <li>
-                <a href="">Menu Title</a>
-            </li>
-            <li>
-                <a href="">Menu Title</a>
+                <a href="../../views/crew">Crews</a>
             </li>
         </ul>
     </nav>
 
     <main class="section-form">
 
-        <div class="goBack"><a href="index.html"><i class="fas fa-chevron-left" style="margin-right: 20px"></i>Go back to Menu Title</a></div>
+        <div class="goBack"><a href="../../index.html"><i class="fas fa-chevron-left" style="margin-right: 20px"></i>Go back to List of Routes</a></div>
 
         <div class="header">
-            <h1>Adding an Item</h2>
+            <h1>Adding a Route</h2>
                 <p>Please fill up all the required fields (*).</p>
         </div>
 
         <table class="table-form">
             <tr>
-                <td>
-                    <label>Label*</label>
-                    <input type="text" placeholder="Enter something here">
-                </td>
-                <td>
-                    <label>Label*</label>
-                    <input type="text" placeholder="Enter something here">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="td-single">
-                    <label>Label*</label>
-                    <input type="text" placeholder="Enter something here">
+                <td colspan="2">
+                    <label for="location1"><strong>Location no. 1</strong>*</label>
+                    <input type="text" name="location1" id="location1" placeholder="Enter location no. 1">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label>Label*</label>
-                    <select name="colors" id="">
-                        <option value="orange">orange</option>
-                        <option value="pink">pink</option>
-                        <option value="red">red</option>
-                    </select>
+                    <label for="lat1 ">Latitude*</label>
+                    <input type="text" name="lat1" id="lat1" placeholder="Enter latitude">
                 </td>
                 <td>
-                    <label>Label*</label>
-                    <input type="text" placeholder="Enter something here">
+                    <label for="long1">Longitude*</label>
+                    <input type="text" name="long1" id="long1" placeholder="Enter longitude">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="location2"><strong>Location no. 2</strong>*</label>
+                    <input type="text" name="location2" id="location2" placeholder="Enter location no. 2">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label>Sex*</label>
-
-                    <input type="radio" name="sex" id="rb-female" value="Female"><label class="lbl-radio" for="rb-female">Female</label>
-
-                    <input type="radio" name="sex" id="rb-male" value="Male"><label class="lbl-radio" for="rb-female">Male</label>
+                    <label for="lat2">Latitude*</label>
+                    <input type="text" name="lat2" id="lat2" placeholder="Enter latitude">
                 </td>
                 <td>
-                    <label>Label*</label>
-                    <input type="text" placeholder="Enter something here">
+                    <label for="long2">Longitude*</label>
+                    <input type="text" name="long2" id="long2" placeholder="Enter longitude">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="distance">Distance in KM</label>
+                    <input type="number" name="distance" id="distance" disabled placeholder="0">
+                </td>
+                <td>
+                    <label for="ETA">ETA</label>
+                    <input type="number" name="eta" id="eta" disabled placeholder="0">
                 </td>
             </tr>
         </table>
 
-        <div class="btn-submit-container">
-            <button type="submit"><a href="index.html">Save</a></button>
+        <div class="btn-submit-container ">
+            <button type="submit" id="btn-submit">Save</button>
         </div>
 
     </main>
-    <!-- <script typ="module" src="node_modules/geo-distance-helper"></script> -->
-    <script src="sample.js"></script>
-
 
 </body>
 
